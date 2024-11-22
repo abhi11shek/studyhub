@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub | Home</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="./1.html"> <div class="logo">StudyHub</div></a> 
+            <ul class="nav-links">
+                <li><a href="#pyp">PYP</a></li>
+                <li><a href="#labs">Lab Experiments</a></li>
+                <li><a href="#learn">Learn and Track</a></li>
+                <li><a href="#suggestions">Suggestions</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search...">
+                <button onclick="handleSearch()">Search</button>
+            </div>
+            <a href="./login.html" class="get-started">Get Started</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="pyp" class="section">
+            <h2>Previous Year Papers</h2>
+            <p>Access past exam papers for better preparation.</p>
+            <a href="./pyp.html" target="_blank" class="click-here">Click Here</a>
+        </section>
+
+        <section id="labs" class="section">
+            <h2>Lab Experiments</h2>
+            <p>Explore practical experiments for hands-on learning.</p>
+            <a href="./labs.html" target="_blank" class="click-here">Click Here</a>
+        </section>
+
+        <section id="learn" class="section">
+            <h2>Learn and Track</h2>
+            <p>Enhance your skills with interactive learning paths.</p>
+            <div class="cards">
+                <div class="card">UI/UX
+				</div>
+                <div class="card">Web Development</div>
+                <div class="card">App Development</div>
+                <div class="card">Data Structures & Algorithms</div>
+            </div>
+			<a href="./track.html" target="_blank" class="click-here">Know More</a>
+        </section>
+
+        <section id="suggestions" class="section">
+            <h2>Suggestions from Mentors</h2>
+            <p>Get advice from industry experts to guide your learning path.</p>
+            <div class="cards">
+                <div class="card">Career Tips</div>
+                <div class="card">Project Suggestions</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 StudyHub. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#"><img src="https://via.placeholder.com/24x24.png?text=F" alt="Facebook"></a>
+                <a href="#"><img src="https://via.placeholder.com/24x24.png?text=T" alt="Twitter"></a>
+                <a href="#"><img src="https://via.placeholder.com/24x24.png?text=L" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+

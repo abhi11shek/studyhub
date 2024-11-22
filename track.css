@@ -1,0 +1,178 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #1f1f1f;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.home-button {
+    background-color: #e91e63;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #c2185b;
+}
+
+/* Main Content Styles */
+.content-page {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.skill-button {
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.skill-button:hover {
+    background-color: #c2185b;
+}
+
+.skill-content {
+    display: none;
+    margin-top: 2rem;
+}
+
+.skill-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.skill-content ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.skill-content li {
+    margin-bottom: 0.5rem;
+}
+
+.skill-content a {
+    color: #e91e63;
+    text-decoration: none;
+}
+
+.skill-content a:hover {
+    text-decoration: underline;
+}
+
+.tracker {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.tracker button {
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tracker button:hover {
+    background-color: #c2185b;
+}
+
+.tracker-form {
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #333;
+    border-radius: 4px;
+}
+
+.tracker-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tracker-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.tracker-form button {
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.tracker-form button:hover {
+    background-color: #c2185b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-page {
+        padding: 1rem;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skill-button {
+        width: 100%;
+    }
+}
+

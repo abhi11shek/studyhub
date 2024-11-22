@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub | Lab Experiments</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./1.html" class="home-button">Home</a>
+        </nav>
+    </header>
+    <div class="content-page">
+        <h1>Lab Experiments</h1>
+        <div class="semester-buttons">
+            <button onclick="showSubjects('lab-sem1')">I Semester</button>
+            <button onclick="showSubjects('lab-sem2')">II Semester</button>
+        </div>
+        <div id="lab-sem1" class="subjects" style="display: none;">
+            <h2>I Semester Labs</h2>
+            <ul>
+                <li>EW</li>
+                <li>Physics</li>
+                <li>PPS</li>
+            </ul>
+        </div>
+        <div id="lab-sem2" class="subjects" style="display: none;">
+            <h2>II Semester Labs</h2>
+            <ul>
+                <li>ED</li>
+                <li>BEEE</li>
+                <li>Chemistry</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

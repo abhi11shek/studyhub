@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn and Track | StudyHub</title>
+    <link rel="stylesheet" href="./track.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./1.html" class="home-button">Home</a>
+        </nav>
+    </header>
+
+    <main id="learn-track">
+        <section class="content-page">
+            <h1>Learn and Track Your Skills</h1>
+            <p>Select a skill to start learning and track your progress.</p>
+
+            <div class="skills-container">
+                <button class="skill-button" onclick="loadSkillContent('ui-ux')">UI/UX</button>
+                <button class="skill-button" onclick="loadSkillContent('web-development')">Web Development</button>
+                <button class="skill-button" onclick="loadSkillContent('app-development')">App Development</button>
+                <button class="skill-button" onclick="loadSkillContent('data-structures')">Data Structures</button>
+                <button class="skill-button" onclick="loadSkillContent('algorithms')">Algorithms</button>
+            </div>
+
+            <div id="skill-content" class="skill-content">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+
+            <div id="tracker-button" class="tracker">
+                <button onclick="toggleTracker()">Track Your Progress</button>
+            </div>
+
+            <div id="tracker-form" class="tracker-form">
+                <h2>Track Your Progress</h2>
+                <form id="progress-form">
+                    <label>
+                        <input type="checkbox" id="tutorial-completed"> Completed Basic Tutorial
+                    </label>
+                    <label>
+                        <input type="checkbox" id="test-attempted"> Attempted Skill Test
+                    </label>
+                    <label>
+                        <input type="checkbox" id="project-completed"> Completed Basic Project
+                    </label>
+                    <button type="button" onclick="saveProgress()">Save Progress</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="./track.js"></script>
+</body>
+</html>
